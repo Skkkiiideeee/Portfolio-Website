@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>website portfolio</title>
+	<style type="text/css">
+		body{
+			background-color: #fdf6e4;
+			color: #533c2b;
+		}
+		.iconbar{
+			width: 100%;
+			height: 40px;
+			background-color: #f4d7a3;
+			overflow: auto;
+		}
+		.iconbar a{
+			float: left;
+			text-align: center;
+			width: 25%;
+			padding: 12px 0;
+			transition: all 0.3s ease; /* Add transition for hover effects */
+  			color: #533c2b; /* White text color */
+  			font-size: 15px; /* Increased font size */
+  			/*border: 2px solid palevioletred;*/
+		}
+		.iconbar a:hover {
+			background-color: #f0e5d6;
+			cursor: pointer;
+		}
+		.active {
+			background-color: #cda274;
+			text-emphasis: brown;
+		}
+		.menu{
+			display:inline-block;
+			cursor: pointer;
+		}
+		.bar1,.bar2,.bar3 {
+			width: 35px;
+  			height: 5px;
+  			background-color: #333;
+  			margin: 6px 0;
+  			transition: 0.4s;
+		}
+		.change .bar1{
+			transform: translate(0,11px) rotate(-45deg);
+		}
+		.change .bar2{
+			opacity: 0;
+		}
+		.change .bar3{
+			transform: translate(0,-11px) rotate(45deg);
+		}
+		.avatar{
+			border-radius: 50% ;
+			width: 20%;
+			height: 25%;
+			margin-left: 15%;
+			margin-top: 2%;
+			float: left;
+		}
+		.biodata{
+			margin-left: 20px;
+    		display: inline-block;
+    		float:left;
+   			 width:40%;
+		}
+		.biodatanewLine{
+			 clear: both;
+		}
+	.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #533c2b;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fdf6e4;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+	</style>
+</head>
+<body>
+	<h1>ANDROMEDA'S MOON
+		<div class="menu" onclick="openNav(this)" style="float: right;">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</div>
+	</h1>
+	<script type="text/javascript">
+		function menuFunction(x) {
+			x.classList.toggle("change");		}
+	</script>
+	<script>
+		function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+	<div class="iconbar">
+		<a class="active"><i>Home</i></a>
+		<a>Gallery</a>
+		<a>Interest</a>
+		<a href="blogs.html">Blogs</a>
+	</div>
+	<br>
+	<img src="C:\Users\KIIT\Downloads\Black White Photography Photo Collage Minimalist Desktop Wallpaper (2).png" style="width: 100%;height: 100vh;">
+	<img src="C:\Users\KIIT\Downloads\WhatsApp Image 2023-10-28 at 1.19.21 AM.jpeg" class="avatar"></img>
+	<div class="biodata">
+		<h2><br>Name: Sugyani Krishnadarsinee<br><br>Age:19</h2>
+		<p>I am a 2nd year student in KIIT University, Bhubaneswar, currently pursuing computer sciene and engineering. Since my childhood, I was keen about computer languages so as i grew older, i decided to pursue this path.<br> Since I am still learning, I have created this website as a part of my portfolio and also a practice project for mmyself. This website aims to capture my dreams, hopes, interests, wishes and aims in a creative way as I deepen my knowledge as a front end developer while working on it.<br><br>truly, Sugyani.</p>
+	</div>
+	<h2 style="clear: both; background-color: #f4d7a3;"><center>More About Me</center></h2>
+	<div style="clear:both; float:left; display: inline-block; width: 25%; padding: 5px;">
+		<h3>Education</h3>
+		<p><i>Secondary Education:</i><br>Stewart School,Bhubaneswar<br><i>Higher Secondary Education:</i><br>Mother's Public School, Bhubaneswar</p>
+	</div>
+	<div style="float:left; display: inline-block; width: 25%; padding: 5px;">
+		<h3>Prizes and awards</h3>
+		<ul>
+			<li>Second Prize in school for international informatics olympiad in the year 2017,Bhubaneswar</li>
+			<li>second position in interhouse spelling competition in year 2011,Delhi Public School, Farakka</li>
+		</ul>
+	</div>
+	<div style="float:left; display: inline-block; width: 47%; padding: 5px;">
+		<h3>Skills</h3>
+		<div style="float:left; display: inline-block; width: 26%; padding: 5px;">
+			<h4>Soft Skills</h4>
+		<ul>
+			<li>Time Management</li>
+			<li>creativity</li>
+			<li>team Work</li>
+		</ul>
+		</div>
+		<div style="float:left; display: inline-block; width: 70%; padding: 5px;">
+			<h4>Technical Skills</h4>
+		<ul>
+			<li>Programming Languages: C,Java and Python</li>
+			<li>Frontend Development: Html, CSS, Javascript</li>
+			<li>DBMS</li>
+			<li>data collection and analysis</li>
+			<li>technical writting</li>
+		</ul>
+		</div>
+	</div>
+	<div style="clear: both; float: left; display: inline-block; width: 100%; padding:5px;">
+		<h3>Experience</h3>
+		<div style="clear: both; float: left; display: inline-block; width:47%; padding:5px;">
+			<h4>Academic Projects Undertaken</h4>
+			<ol>
+				<li>Event: Science Exhiition<br>Topic:Periscope and the science behind it.<br>Year:2013<br>Place:Stewart School Bhubaneswar</li>
+				<li>Event: Science Exhiition<br>Topic: Watercycle<br>Year:2015<br>Place:Stewart School Bhubaneswar</li>
+				<li>Event: Science Exhiition<br>Topic:Electricity producing windmill<br>Year:2016<br>Place:Stewart School Bhubaneswar</li>
+				<li>Event: Science Exhiition<br>Topic:Electric Fan<br>Year:2017<br>Place:Stewart School Bhubaneswar</li>
+				<li>Event: Literature Exhiition<br>Topic:Daffodills by William Wordsworth<br>Year:2018<br>Place:Stewart School Bhubaneswar</li>
+			</ol>
+		</div>
+		<div style="float: left; display: inline-block; width:47%; padding:5px;">
+			<h4>Internship</h4>
+			<p>Organisation: TADS Education Pvt. Ltd<br>Duration:December2020-July2021<br>Position:Associate in Bhubaneswar City Chapter<br>Decription: a private programme for highschoolers to develop 21st century skills. Conducted intercity and intracity events, written poems for mental health collab event.</p>
+			<br><br>
+			<h4>My Work</h4>
+			<p>The Blue Moon Cafe: <a href="bluemoon.html" target="_blank">Click here</a><br>The CSE2 timetable:<a href="timetableforcse2.html" target="_blank">click here</a></p>
+		</div>
+	</div>
+</body>
+</html>

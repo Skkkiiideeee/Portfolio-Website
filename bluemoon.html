@@ -1,0 +1,453 @@
+<!DOCTYPE html!>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>bluemooncafe</title>
+	<style type="text/css"> 
+		* {
+ 		 box-sizing: border-box;
+			}
+
+		.row {
+ 		 margin-left:-5px;
+  		margin-right:-5px;
+		}
+  
+		.column {
+ 		 float: left;
+ 		 width: 50%;
+ 		 padding: 5px;
+		}
+		/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column1 {
+	float: left;
+	width: 25%;
+	padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: #e5ddc9;
+}
+tr:nth-child(odd) {
+	background-color: #d7c9b8 ;
+}
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: deeppink; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+  border: 2px solid palevioletred;
+}
+
+.icon-bar a:hover {
+  background-color: hotpink; /* Add a hover color */
+}
+
+.active {
+  background-color: #FFB6C1; /* Add an active/current color */
+}
+.menu {
+	width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+</head>
+<body style="background-color: #FFB6C1;">
+	<div class="row">
+	<h1 style='font-family: cursive;'><center> Blue Moon Cafe</center><div style="float: right;">
+	<div class="menu"></div>
+	<div class="menu"></div>
+	<div class="menu"></div>
+	</div></h1></div>
+	<img src="C:\Users\KIIT\Downloads\_ ੈ✩‧˚.jpeg" width="1247" height="300">
+	<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a>
+  <a href="#"><i class="fa fa-search"></i></a>
+  <a href="#"><i class="fa fa-envelope"></i></a>
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a>
+</div>
+	<h2 style='background-color: #f5f5dc;'><center>Beverages</center></h2>
+	<div class="row">
+		<div class="column">
+		<h3 style='background-color: #953553;'>COFFEE</h3>
+		<table>
+			<tr style='background-color: lightblue;'> 
+				<th>ITEM</th>
+				<th>PRICE</th>
+				<th>QUANTITY</th>
+			</tr>
+			<tr>
+				<td><a href="https://www.yummytummyaarthi.com/instant-black-coffee-recipe/"target="_blank">Black Coffee</a></td>
+				<td>Rs. 45</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://www.acouplecooks.com/how-to-make-an-americano/"target="_blank"> Americano</td>
+				<td>Rs. 40</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Latte</td>
+				<td>Rs. 50</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<button style="background-color: lightcyan;">Continue</button>
+	</div>
+	<div class="column">
+		<h3 style='background-color: #953553;' style='background-color: antiquewhite;'>TEA</h3>
+				<table>
+			<tr style='background-color: lightblue;'> 
+				<th>ITEM</th>
+				<th>PRICE</th>
+				<th>QUANTITY</th>
+			</tr>
+			<tr>
+				<td>Lemon Tea</td>
+				<td>Rs. 45</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Ice Tea</td>
+				<td>Rs. 40</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Ginger Tea</td>
+				<td>Rs. 50</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<div style="float: right;"> <button style="background-color: lightcyan;">Continue</button></div>
+	</div>
+</div>
+<h2 style='background-color: #f5f5dc;'><center>Snacks</center></h2>
+<div class="row">
+	<div class="column1">
+		<h3 style='background-color: #953553;' style='background-color: antiquewhite;'>INDIAN</h3>
+		<table>
+			<tr style='background-color: lightblue;'> 
+				<th>ITEM</th>
+				<th>PRICE</th>
+				<th>QUANTITY</th>
+			</tr>
+			<tr>
+				<td>SAMOSA</td>
+				<td>Rs. 45</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>CHAAT</td>
+				<td>Rs. 40</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>DAHI BARA</td>
+				<td>Rs. 50</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<button style="background-color: lightcyan;">Continue</button>
+	</div>
+	<div class="column1">
+		<h3 style='background-color: #953553;' style='background-color: antiquewhite;'>MEXICAN</h3>
+		<table>
+			<tr style='background-color: lightblue;'> 
+				<th>ITEM</th>
+				<th>PRICE</th>
+				<th>QUANTITY</th>
+			</tr>
+			<tr>
+				<td>SAMOSA</td>
+				<td>Rs. 45</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>CHAAT</td>
+				<td>Rs. 40</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>DAHI BARA</td>
+				<td>Rs. 50</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<button style="background-color: lightcyan;">Continue</button>
+	</div>
+	<div class="column1">
+		<h3 style='background-color: #953553;' style='background-color: antiquewhite;'>FRENCH</h3>
+		<table>
+			<tr style='background-color: lightblue;'> 
+				<th>ITEM</th>
+				<th>PRICE</th>
+				<th>QUANTITY</th>
+			</tr>
+			<tr>
+				<td>SAMOSA</td>
+				<td>Rs. 45</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>CHAAT</td>
+				<td>Rs. 40</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>DAHI BARA</td>
+				<td>Rs. 50</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<button style="background-color: lightcyan;">Continue</button>
+	</div>
+	<div class="column1">
+		<h3 style='background-color: #953553;' style='background-color: antiquewhite;'>JAPANESE</h3>
+		<table>
+			<tr style='background-color: lightblue;'> 
+				<th>ITEM</th>
+				<th>PRICE</th>
+				<th>QUANTITY</th>
+			</tr>
+			<tr>
+				<td>SAMOSA</td>
+				<td>Rs. 45</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>CHAAT</td>
+				<td>Rs. 40</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>DAHI BARA</td>
+				<td>Rs. 50</td>
+				<td>
+					<select style='background-color: #e2619f;'>
+						<option>Select quantity</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<button style="background-color: lightcyan;">Continue</button>
+	</div>
+</div>
+</body>
+</html>
